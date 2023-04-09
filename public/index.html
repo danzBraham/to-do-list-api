@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To Do List</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://kit.fontawesome.com/f3bdef35b2.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+    integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <div class="container-form">
+    <h1>To Do List</h1>
+    <form class="create-form" autocomplete="off">
+      <input type="text" placeholder="e.g. Feeding Cat">
+      <button type="submit"><i class="fa-solid fa-plus"></i></button>
+    </form>
+    <div class="form-alert"></div>
+  </div>
+
+  <div class="container-todo">
+    <div class="loading-text">Loading...</div>
+    <div class="todos">
+      <!-- This section is generated dynamically by the script.js -->
+    </div>
+  </div>
+
+  <div class="modal">
+    <form class="edit-form" autocomplete="off">
+      <i class="fa-solid fa-xmark close-btn"></i>
+      <h2>Edit Task</h2>
+      <div class="container-input">
+        <div class="input-box">
+          <label for="id">ID</label>
+          <input type="text" id="id" readonly>
+        </div>
+        <div class="input-box">
+          <label for="name">Name</label>
+          <input type="text" id="name">
+        </div>
+        <div class="input-box check">
+          <label for="completed">Completed</label>
+          <input type="checkbox" id="completed">
+        </div>
+      </div>
+      <button type="submit" class="submit-edit">Edit</button>
+      <div class="form-alert"></div>
+    </form>
+  </div>
+</body>
+
+</html>

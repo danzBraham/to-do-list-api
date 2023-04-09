@@ -1,0 +1,17 @@
+{
+  "name": "to-do-list",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "exports": "./app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^7.0.2"
+  }
+}
