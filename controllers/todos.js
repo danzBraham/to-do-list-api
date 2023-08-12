@@ -1,6 +1,6 @@
-import Todo from "../models/Todo.js";
-import asyncWrapper from "../middleware/async-wrapper.js";
-import { createCustomError } from "../errors/custom-error.js";
+import Todo from '../models/Todo.js';
+import asyncWrapper from '../middleware/async-wrapper.js';
+import { createCustomError } from '../errors/custom-error.js';
 
 export const getAllTodos = asyncWrapper(async (req, res) => {
   const todos = await Todo.find({});
@@ -39,5 +39,5 @@ export const deleteTodo = asyncWrapper(async (req, res, next) => {
   if (!todo) {
     return next(createCustomError(`No task with ID: ${todoID}`, 404));
   }
-  res.status(200).json({ todo });
+  res.status(200).json({ success: true });
 });

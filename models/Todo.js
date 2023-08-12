@@ -1,11 +1,11 @@
-import mongoose from "mongoose";
+import mongoose from 'mongoose';
 
 export const TodoSchema = new mongoose.Schema({
   name: {
     type: String,
-    required: [true, "Must provide name"],
+    required: [true, 'Must provide name'],
     trim: true,
-    maxlength: [20, "Name can not be more than 20 characters"],
+    maxlength: [20, 'Name can not be more than 20 characters'],
   },
   completed: {
     type: Boolean,
@@ -13,4 +13,4 @@ export const TodoSchema = new mongoose.Schema({
   },
 });
 
-export default mongoose.model("Todo", TodoSchema);
+export default mongoose.model('Todo', TodoSchema);

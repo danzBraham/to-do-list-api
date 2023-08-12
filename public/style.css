@@ -8,11 +8,11 @@
 }
 
 :root {
-  --main-color: #1BA3A1;
+  --main-color: #1ba3a1;
   --second-color: #a7f1ef;
   --third-color: #d3f8f6;
-  --shadow-one: #22CECB;
-  --shadow-two: #42E0DD;
+  --shadow-one: #22cecb;
+  --shadow-two: #42e0dd;
 }
 
 html {
@@ -191,20 +191,21 @@ body {
 }
 
 .container-todo .todos .todo .icon .fa-pen {
-  color: #3733FF;
+  color: #3733ff;
   cursor: pointer;
   transition: all 0.15s ease-in;
   font-size: 30px;
 }
 
 .container-todo .todos .todo .icon .fa-trash {
-  color: #FF3333;
+  color: #ff3333;
   cursor: pointer;
   transition: all 0.15s ease-in-out;
   font-size: 30px;
 }
 
-.container-todo .todos .todo .icon .fa-pen:hover, .container-todo .todos .todo .icon .fa-trash:hover {
+.container-todo .todos .todo .icon .fa-pen:hover,
+.container-todo .todos .todo .icon .fa-trash:hover {
   transform: translateY(-4px);
 }
 
@@ -278,7 +279,7 @@ body {
   border: 1px solid #000;
 }
 
-.modal form .container-input .input-box input[type="checkbox"] {
+.modal form .container-input .input-box input[type='checkbox'] {
   width: 20px;
   height: 20px;
 }
